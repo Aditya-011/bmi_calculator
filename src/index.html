@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>BMI Calculator</h1>
-    <form action="submit" onsubmit="calculateBMI()">
+    <div >
     <div class="heightWrapper">
         <p>Enter Your Height in metres</p>
         <input type="text" class="height">
@@ -17,8 +17,15 @@
         <p>Enter Your Weight in Kilograms</p>
         <input type="text" class="weight">
     </div>
-    <button type="submit">Calculate</button>
-    </form>
+    <button onclick="calculateBMI()">Calculate</button>
+    </div>
+    <div class="result">
+       
+    </div>
+    <div class="imageTag">
+        
+        
+    </div>
 </body>
 <script src="index.js"></script>
 <script>
