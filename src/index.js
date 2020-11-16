@@ -5,9 +5,13 @@ const weight = document.querySelector(".weight").value
 console.log(`${height} ${weight}`);
     const BMI = weight/(height*height)
     const bmi = BMI.toFixed(2)
-    bmiImages(bmi)
+    if(bmi > 0)
+    {
+        bmiImages(bmi);
+        document.querySelector('.result').innerHTML = `<p>Your BMI <p class='bmi'>${bmi}</p><p/>`
+    }
     console.log(bmi);
-    document.querySelector('.result').innerHTML = `<h2>Your BMI is ${bmi} <h2/>`
+   
     
 }
 //document.querySelector("button").addEventListener('click',calculateBMI)
@@ -22,6 +26,7 @@ function bmiImages(bmi)
     {
         document.querySelector(".imageTag").innerHTML = `<img src="/src/images/overweight.png" alt="Obese">
         <p>Obese</p>`
+        document.querySelector(".imageTag").classList.add('animation')
     }
     else if(25 <=bmi &&bmi< 30)
     {

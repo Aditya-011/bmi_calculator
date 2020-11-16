@@ -8,16 +8,19 @@
 </head>
 <body>
     <h1>BMI Calculator</h1>
-    <div >
-    <div class="heightWrapper">
-        <p>Enter Your Height in metres</p>
-        <input type="text" class="height">
+    <div  class="form">
+    <div class="heightWrapper" >
+        <p>Enter Your Height 
+        </p>
+        <input type="text" class="height" placeholder="Height(m)">
+        <i class="interconversion">*   1 foot 0.3048 meter</i>
     </div>
     <div class="weightWrapper">
-        <p>Enter Your Weight in Kilograms</p>
-        <input type="text" class="weight">
+        <p>Enter Your Weight </p>
+        <input type="text" class="weight" placeholder="Weight(kg)">
+        <i class="interconversion">*   1 lbs 0.45 kg</i>
     </div>
-    <button onclick="calculateBMI()">Calculate</button>
+    <div class="button"><button onclick="calculateBMI()">Calculate</button></div>
     </div>
     <div class="result">
        
@@ -28,7 +31,5 @@
     </div>
 </body>
 <script src="index.js"></script>
-<script>
 
-</script>
 </html>
