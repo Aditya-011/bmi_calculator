@@ -1,96 +1,88 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-body
-{
-    margin: 0;
-    padding: 0;
-    background-color: #f5eded;
-    font-family: 'Montserrat', sans-serif;
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f5eded;
+  font-family: "Montserrat", sans-serif;
 }
-h1
-{
-    text-align: center;
-    font-size: 3rem;
+h1 {
+  text-align: center;
+  font-size: 3rem;
 }
-.form
-{
-    text-align: center;
-    justify-content: center;
-    margin-top: 9vh;
+.form {
+  text-align: center;
+  justify-content: center;
+  margin-top: 9vh;
 }
-.weightWrapper
-{
-    display: block;
-    margin-top: 1rem;
+.weightWrapper {
+  display: block;
+  margin-top: 1rem;
 }
 
-div p, div input
-{
-    display: inline;
-    font-size: 1.2rem;
+div p,
+div input {
+  display: inline;
+  font-size: 1.2rem;
 }
-button 
-{
-    padding: 0.5rem 1rem;
-   margin-top: 1.5rem;
-   border: none;
-   border-radius: 25px;
-   font-size: 1.3rem;
-   font-weight: 550;
-    cursor: pointer;
-    background-color: #3e3636;
-    color: #fff;
-    outline: none;
+button {
+  padding: 0.5rem 1rem;
+  margin-top: 2.2rem;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.3rem;
+  font-weight: 550;
+  cursor: pointer;
+  background-color: #3e3636;
+  color: #fff;
+  outline: none;
 }
-input
-{
-    width: 18rem;
-    margin-left: 0.9rem;
-    padding-left: 0.7rem;
-    border-radius: 23px;
-    outline: none;
-    border: 2px solid #3e3636 ;
+input {
+  width: 18rem;
+  margin-left: 0.9rem;
+  padding: 0.4rem 0.6rem;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #4a4b46;
 }
-input::placeholder
-{
-    font-size: 1rem;
-    padding: 0.5rem;
+input::placeholder {
+  font-size: 1rem;
+  padding: 0.6rem 0.5rem;
+  font-family: "Montserrat", sans-serif;
 }
-.result
-{
-    text-align: center;
-    margin-top: 2vh;
+input:focus {
+  border-bottom: 2px solid black;
+}
+.result {
+  text-align: center;
+  margin-top: 2vh;
+}
 
+.imageTag {
+  text-align: center;
 }
-
-.imageTag
-{
-    text-align: center;
-    
+.imageTag img {
+  width: 30rem;
+  height: 30rem;
 }
-.imageTag img 
-{
-    width: 30rem;
-    height: 30rem;
-   
+.imageTag p {
+  display: block;
+  font-size: 1.3rem;
+  font-weight: 600;
 }
-.imageTag p 
-{
-    display: block;
-    font-size: 1.3rem;
-    font-weight: 600;
-
+.bmi {
+  display: block;
+  margin-top: -0.4rem;
+  font-size: 2.5rem;
+  color: #d72323;
+  font-weight: 600;
 }
-.bmi
-{
-    display: block;
-    margin-top: -0.4rem;
-    font-size: 2.5rem;
-    color: #d72323;
-    font-weight: 600;
-}
-.interconversion
-{
-    color: red;
-    margin-left: 3rem;
+select {
+  margin-left: 1rem;
+  padding: 0.2rem 0.5rem;
+  outline: none;
+  border-radius: 1px;
+  border: 2px solid black;
+  font-family: "Montserrat", sans-serif;
 }

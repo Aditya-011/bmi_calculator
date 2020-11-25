@@ -6,19 +6,31 @@
     <title>BMI Calculator</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 <body>
     <h1>BMI Calculator</h1>
+    
+    
     <div  class="form">
     <div class="heightWrapper" >
         <p>Enter Your Height 
         </p>
-        <input type="text" class="height" placeholder="Height(m)">
-        <i class="interconversion">*   1 foot 0.3048 meter</i>
+        <input type="text" class="height" placeholder="Height">
+        <select class="heightOption">
+            <option value="m">m</option>
+            <option value="feet">feet</option>
+            
+        </select>
     </div>
     <div class="weightWrapper">
         <p>Enter Your Weight </p>
-        <input type="text" class="weight" placeholder="Weight(kg)">
-        <i class="interconversion">*   1 lbs 0.45 kg</i>
+        <input type="text" class="weight" placeholder="Weight">
+        <select class="weightOption">
+            <option value="kg">kg</option>
+            <option value="lbs">lbs</option>
+            
+    
+    </select>
     </div>
     <div class="button"><button onclick="calculateBMI()">Calculate</button></div>
     </div>
@@ -31,5 +43,7 @@
     </div>
 </body>
 <script src="index.js"></script>
-
+<script>
+   
+</script>
 </html>
