@@ -1,8 +1,12 @@
-/////////////////////////////////////                      BMI Calcultor Function               /////////////////////////////////////
+const log = console.log;
+
+/////////////////////////////////         Variable Intializations           ////////////////////////////
 let height;
 let weight;
 var selWeight;
 var selHeight;
+/////////////////////////////////////                      BMI Calcultor Function               /////////////////////////////////////
+
 function calculateBMI() {
   height = document.querySelector(".height").value;
   weight = document.querySelector(".weight").value;
@@ -57,6 +61,8 @@ function bmiImages(bmi) {
         <p>Severely Underweight</p>`;
   }
 }
+
+///////////////////////////////               Function to Check the units of inputs       /////////////////////
 function unitCheck() {
   if (selWeight === "lbs") {
     weight = weight * 0.453592;
@@ -86,30 +92,4 @@ $(".heightOption").change(function () {
 
   $(this).find(":selected").text(selHeight);
 });
-/*
-$(".weightOption").change(function (weight) {
-  var optWeight = $(this).find(":selected");
-  const selWeight = optWeight.text();
-  //console.log(selWeight);
-  // alert(og);
-  if (selWeight === "lbs") {
-    weight++;
-    console.log(true);
-  }
-
-  $(this).find(":selected").text(selWeight);
-});
-
-$(".heightOption").change(function (height) {
-  var optHeight = $(this).find(":selected");
-  var selHeight = optHeight.text();
-  //console.log(selHeight);
-  // alert(og);
-
-  $(this).find(":selected").text(selHeight);
-  if (selHeight === "feet") {
-    height++;
-    console.log(true);
-  }
-}); */
-const log = console.log;
+///////////////////////////////     End               /////////////////////////////////////////////////
