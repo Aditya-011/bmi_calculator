@@ -64,7 +64,7 @@ input:focus {
 }
 .result {
   text-align: center;
-  margin-top: 2vh;
+  margin-top: 1rem;
 }
 
 .imageTag {
@@ -76,7 +76,7 @@ input:focus {
 }
 .imageTag p {
   display: block;
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-weight: 600;
 }
 .bmi {
@@ -94,14 +94,118 @@ select {
   border: 2px solid var(--black);
   font-family: "Montserrat", sans-serif;
 }
-footer a {
-  color: var(--btnBg);
-  bottom: 10px;
-  position: absolute;
-  left: 0;
-  font-size: 1.2rem;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
+@media only screen and (max-width: 850px) {
+  input {
+    width: 14rem;
+    font-size: 0.7rem;
+  }
+  .heightWrapper p,
+  .weightWrapper p {
+    font-size: 1.1rem;
+  }
+}
+@media only screen and (max-width: 650px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  input {
+    width: 10rem;
+    padding: 0.3rem 0.5rem;
+  }
+  .heightWrapper p,
+  .weightWrapper p {
+    font-size: 1.1rem;
+  }
+  select {
+    margin-left: 0.7rem;
+    padding: 0.2rem 0.4rem;
+  }
+  button {
+    font-size: 1.1rem;
+    padding: 0.5rem 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  h1 {
+    font-size: 1.9rem;
+  }
+  input {
+    width: 4rem;
+    padding: 0.2rem 0.4rem;
+    margin-left: 0.5rem;
+  }
+  .heightWrapper p,
+  .weightWrapper p {
+    font-size: 1rem;
+  }
+  select {
+    margin-left: 0.5rem;
+    padding: 0.1rem 0.1rem;
+    width: 3rem;
+  }
+  button {
+    font-size: 1rem;
+    padding: 0.5rem 0.6rem;
+  }
+  .imageTag img {
+    width: 20rem;
+    height: 20rem;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+  input {
+    width: 3rem;
+    padding: 0.2rem 0.4rem;
+    margin-left: 0.5rem;
+  }
+  .heightWrapper p,
+  .weightWrapper p {
+    font-size: 1rem;
+  }
+  select {
+    margin-left: 0.5rem;
+    padding: 0.1rem 0.1rem;
+    width: 3rem;
+  }
+  button {
+    font-size: 1rem;
+    padding: 0.5rem 0.6rem;
+  }
+  .imageTag img {
+    width: 18rem;
+    height: 17rem;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+  input {
+    width: 2.2rem;
+    padding: 0.2rem 0.4rem;
+    margin-left: 0.5rem;
+  }
+  .heightWrapper p,
+  .weightWrapper p {
+    font-size: 1rem;
+  }
+  select {
+    margin-left: 0.5rem;
+    padding: 0.1rem 0.1rem;
+    width: 3rem;
+  }
+  button {
+    font-size: 1rem;
+    padding: 0.5rem 0.6rem;
+  }
+  .imageTag img {
+    width: 18rem;
+    height: 17rem;
+  }
 }
