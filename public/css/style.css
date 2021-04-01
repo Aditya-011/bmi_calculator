@@ -1,8 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+:root {
+  --btnBg: #3e3636;
+  --black: #000;
+  --mainBg: #f5eded;
+  --white: #fff;
+  --bmiText: #d72323;
+  --inputBorder: #4a4b46;
+}
 body {
   margin: 0;
   padding: 0;
-  background-color: #f5eded;
+  background-color: var(--mainBg);
   font-family: "Montserrat", sans-serif;
 }
 h1 {
@@ -32,8 +40,8 @@ button {
   font-size: 1.3rem;
   font-weight: 550;
   cursor: pointer;
-  background-color: #3e3636;
-  color: #fff;
+  background-color: var(--btnBg);
+  color: var(--white);
   outline: none;
 }
 input {
@@ -44,7 +52,7 @@ input {
   border-top-right-radius: 6px;
   outline: none;
   border: none;
-  border-bottom: 2px solid #4a4b46;
+  border-bottom: 2px solid var(--inputBorder);
 }
 input::placeholder {
   font-size: 1rem;
@@ -52,7 +60,7 @@ input::placeholder {
   font-family: "Montserrat", sans-serif;
 }
 input:focus {
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid var(--black);
 }
 .result {
   text-align: center;
@@ -75,7 +83,7 @@ input:focus {
   display: block;
   margin-top: -0.4rem;
   font-size: 2.5rem;
-  color: #d72323;
+  color: var(--bmiText);
   font-weight: 600;
 }
 select {
@@ -83,6 +91,17 @@ select {
   padding: 0.2rem 0.5rem;
   outline: none;
   border-radius: 1px;
-  border: 2px solid black;
+  border: 2px solid var(--black);
   font-family: "Montserrat", sans-serif;
+}
+footer a {
+  color: var(--btnBg);
+  bottom: 10px;
+  position: absolute;
+  left: 0;
+  font-size: 1.2rem;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
