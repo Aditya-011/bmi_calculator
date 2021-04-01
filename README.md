@@ -1,6 +1,6 @@
 # BMI Calculator
 
-This project was built using Vanilla Javascript, jQueryd deployed with Turbo 360.
+This project was built using Vanilla Javascript, jQuery and deployed with Turbo 360.
 
 ##
 
