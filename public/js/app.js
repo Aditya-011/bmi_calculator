@@ -1,17 +1,26 @@
-const log = console.log;
+//const log = console.log;
 
 /////////////////////////////////         Variable Intializations           ////////////////////////////
 let height;
 let weight;
 var selWeight;
 var selHeight;
+height = document.querySelector(".height").value;
+weight = document.querySelector(".weight").value;
+
+const changeHunit = () => {
+  height = document.querySelector(".height").value;
+};
+const changeWunit = () => {
+  weight = document.querySelector(".weight").value;
+};
 /////////////////////////////////////                      BMI Calcultor Function               /////////////////////////////////////
 
 function calculateBMI() {
   height = document.querySelector(".height").value;
   weight = document.querySelector(".weight").value;
   unitCheck();
-  console.log(`${height} ${weight}`);
+  //console.log(`${height} ${weight}`);
 
   const BMI = weight / (height * height);
   const bmi = BMI.toFixed(2);
@@ -21,7 +30,7 @@ function calculateBMI() {
       ".result"
     ).innerHTML = `<p>Your BMI <p class='bmi'>${bmi}</p><p/>`;
   }
-  console.log(bmi);
+  //console.log(bmi);
 }
 
 //////////////////////////               Enter KeyPress Function                            //////////////////////////////////////
@@ -66,17 +75,17 @@ function bmiImages(bmi) {
 function unitCheck() {
   if (selWeight === "lbs") {
     weight = weight * 0.453592;
-    console.log(true);
+    //console.log(true);
   }
-  if (selHeight === "feet") {
+  if (selHeight === "ft") {
     height = height * 0.3048;
-    console.log(true);
+    // console.log(true);
   }
 }
 $(".weightOption").change(function () {
   optWeight = $(this).find(":selected");
   selWeight = optWeight.text();
-  log(true);
+  //log(true);
   //console.log(selWeight);
   // alert(og);
 
@@ -87,7 +96,7 @@ $(".heightOption").change(function () {
   optHeight = $(this).find(":selected");
   selHeight = optHeight.text();
   //console.log(selHeight);
-  log(true);
+  //log(true);
   // alert(og);
 
   $(this).find(":selected").text(selHeight);
